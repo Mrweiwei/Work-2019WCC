@@ -1,0 +1,185 @@
+﻿ <!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />		
+		<title>2019 CSBR Meeting | SRBR: Society for Research on Biological Rhythms</title>
+	</head>
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<!--<script src="bootstrap-3.3.7-dist/js/jQuery.js"></script>-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/index3.css"/>
+	<script src="js/index.js"></script>
+<body>
+	<!--顶部链接部分-->
+	<div id="nav">
+	<ul class="nav nav-tabs">
+		<a href="index.html">
+                   Home
+                </a>
+                <a href="index2.html" >
+                    Logo Competition
+                </a>
+                <a href="index3.html">
+                   Organization
+                </a>
+ 		<a href="index4.html" >
+                   Speakers
+                </a>
+                <a href="index5.html">
+                  Programs
+                </a>
+                <a href="index7.html" >
+                    Abstracts Submission
+                </a>
+                <a href="index6.html" >
+                    Registration</a>
+                <a href="http://www.cscb.org.cn/pay_conference.html">
+                	注册(Chinese)</a>
+                <a href="index8.html" >
+                    Hotel
+                </a>
+</ul>
+</div>
+<!--	顶部LOGO部分-->
+	<div id="header">
+		<img src="img/lg.png" class="img-responsive"/>
+	</div>
+<!--主体部分-->
+<div id="body">
+	<div class="container">
+    <div class="row">
+<!--主体的左边部分-->
+        <div class="col-md-3 col-sm-3 col-lg-3" style="background-color: white;">
+            <img src="img/CSBR.png" class="img-responsive"style="margin-left: auto;margin-right: auto;margin-top: 5%;"/>
+            <img src="img/SD.png" class="img-responsive"style="margin-left: auto;margin-right: auto;margin-top: 5%;"/>
+            <img src="img/SP.png" class="img-responsive"style="margin-left: auto;margin-right: auto;margin-top: 5%;"/>
+            <img src="img/sleep center.png" class="img-responsive"style="margin-left: auto;margin-right: auto;margin-top: 5%;"/>
+            <p><h3>Organized by:</h3><br/>
+World Federation of Societies for Chronobiology (WFSC)<br/>
+Chinese Society for Biological Rhythms (CSCB-CSBR)<br/>
+Soochow University<br/>
+Aschoff-Honma Foundation<br/> 
+National Institute of Biological Science<br/>
+Chinese Sleep Research Society<br/>
+ <img src="img/ewm.png" class="img-responsive"style="margin-left: auto;margin-right: auto;margin-top: 4%;"/>
+        </div>
+<!--主题的右边部分-->
+        <div class="col-md-9 col-sm-9 col-lg-9" style="background-color:white;border-left:2px dotted darkblue;padding-left: 3%;">
+           <p style="text-align: center;font-size: 30px;color: purple;">V World Congress of Chronobiology</p>
+            <p style="text-align: center;font-size: 20px;color: purple;">Suzhou, China. April 25-27, 2019</p>
+            <div class="row">               
+           <p style="font-size: 2rem;line-height: 3.17rem;">
+           		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            <p><h3>Abstracts Submission (Deadline Jan.20, 2019)</h3><br/>
+</p>
+			<!--表单提交 方法post action里面写提交的地址"-->
+			<form id='submit_data' class="form-horizontal" role="form" action="http://www.vxzones.com/2019WCC/lista" method="post" name="form" onSubmit="return myCheck()">
+  				<div class="form-group">
+    			<label for="Title" class="col-sm-2 control-label">Title<span style="color:darkred;">*</span></label>
+    			<div class="col-sm-10">
+      			<input type="text" class="form-control must" id="Title" name="title" required>
+    				</div>
+  				</div>
+  				<div class="form-group">
+    			<label for="Authors" class="col-sm-2 control-label">Authors<span style="color:darkred;">*</span></label>
+    			<div class="col-sm-10">
+      			<input type="text" class="form-control must" id="Authors" name="authors" required>
+    				</div>
+  				</div>
+  				<div class="form-group">
+    			<label for="Affiliation" class="col-sm-2 control-label">Affiliation<span style="color:darkred;">*</span></label>
+    			<div class="col-sm-10">
+      			<input type="text" class="form-control must" id="Affiliation" name="affiliation" required>
+    				</div>
+  				</div>
+  				<div class="form-group">
+    			<label for="Abstract" class="col-sm-2 control-label">Abstract<span style="color:darkred;">*</span></label>
+    			<div class="col-sm-10">
+    				<textarea id="Abstract" name="abstracts" rows="20" cols="5" class="form-control must" required></textarea>
+      			<!--<input type="text" class="form-control" id="Abstract" name="must">-->
+    				</div>
+  				</div>
+  				<div class="form-group">
+    			<label for="Keywords" class="col-sm-2 control-label">Keywords<span style="color:darkred;">*</span></label>
+    			<div class="col-sm-10">
+      			<input type="text" class="form-control must" id="Keywords" name="keyWords" required>
+    				</div>
+  				</div>
+  				<!-- 20181207 添加新内容 -->
+  				<div class="form-group">
+    				<label for="Oralposter" class="col-sm-2 control-label">Oral or Poster<span style="color:darkred;">*</span></label>
+	    			<div class="col-sm-10">
+	      				<input type="text" class="form-control must" id="Oralposter" name="oralPoster" required>
+	    			</div>
+  				</div>
+  				<!-- 20181211 添加新内容 -->
+  				<div class="form-group">
+				    <label for="e-mail" class="col-sm-2 control-label">E-mail <span style="color:darkred;">*</span></label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" id="e-mail" name="email" required>
+				    </div>
+				 </div>
+  			 <!--提交按钮--> 
+  			  <div class="form-group">
+    			<div class="col-sm-offset-2 col-sm-10">
+      				<button type="submit" class="btn btn-danger">Submit</button>
+    				</div>
+  					</div>
+			</form>
+                </div>
+          </div> 
+       </div>
+   </div>
+</div>
+
+
+<div id="bottom">
+		<h1 style="text-align: center;font-size: 1.2em;">Copyright©2019 CSBR: Chinese Society for Biological Rhythms
+</h1>
+</div>
+</body>
+<script type="text/javascript">  
+//   var must=document.getElementsByName("must");//获取必须填的的输入框
+//  var must=document.getElementsByClassName("must");
+
+	$.fn.serializeObject = function () {
+		var o = {};
+		var a = this.serializeArray();
+		$.each(a, function () {
+			if (o[this.name]) {
+				if (!o[this.name].push) {
+					o[this.name] = [o[this.name]];
+				}
+				o[this.name].push(this.value || '');
+			} else {
+				o[this.name] = this.value || '';
+			}
+		});
+		return o;
+	};
+
+
+
+    function myCheck() {
+    	
+        var formData = $("#submit_data").serializeObject();
+
+        fetch('http://www.vxzones.com/2019WCC/lista', {
+            method: 'POST',
+            body: JSON.stringify(formData),
+            mode: 'cors',
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            })
+        }).then(
+        	function(data) {
+	  			alert('Submit successfully. We look forward to seeing you in Suzhou!');
+	        	location.reload();
+        	}
+        );
+        
+        return false;
+    }
+</script>
+</html>
